@@ -117,7 +117,9 @@ function numberGroups( {a, b, c} ) {
   if (a.length > b.length) {
     return (a.length > c.length ? a : c);
   } else {
-  return (b.length > c.length ? b : c);
+    return (b.length > c.length ? b : c)
   }
 }
+
+
 
