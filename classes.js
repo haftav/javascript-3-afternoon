@@ -146,6 +146,17 @@ class ProgressiveManager {
     fire(index) {
       this.reports.splice(index, 1);
       this.bonus += 100;
+      if (this.reports.length >= 101) {
+        this.title = 'Bestest Manager';
+      } else if (this.reports.length >= 51) {
+        this.title = 'Manager Plus';
+      } else if (this.reports.length >= 11) {
+        this.title = 'Manager';
+      } else if (this.reports.length >= 4) {
+        this.title = 'Mostly Manager';
+      } else if (this.reports.length >= 1) {
+        this.title = 'Barely Manager';
+      }
     }
   
   }
